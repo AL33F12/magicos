@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        <link rel="stylesheet" type="text/css" href="css/seres.min.css">
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+.<style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+ </style>
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+    
+     <div data-role="page" id="bienvenida" data-theme="a">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center" >
+<img src="imagenes/paja.jpg" width="100" height="150">
+    </div>
+    <div id="vista" align="center">
+<img  id="asusto" src="imagenes/descarga.jpg" width="300" height="168" >
+    </div>
+<audio id="camara" preload="auto" src="audio/shout.mp3">
+       </audio>
+    </div>
+    </div>
+    
+    
+        <div data-role="page" id="page" data-theme="a">
+	<div data-role="header">
+		<h1>BIENVENIDOS</h1>
+        <div align="center">
+         <a data-role="button" href="#mipanel" data-inline="true" data-icon="star" data-iconpos="right"> Mostrar Menú </a>
+        </div>	
+	</div>
+	<div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    <div align="center">
+    <h1>SERES MAGICOS</h1>
+    </div>
+    <div align="center">
+    <img src="imagenes/prin.jpg" height="200" width="150" id="bien">
+    </div>
+    Existe una gran variedad de criaturas mágicas o seres fantásticos que conocemos por la literatura y el cine, pero también hay muchos que provienen de leyendas de diferentes culturas, que se han transmitido mediante el boca a boca y que actualmente son conocidos por muchos de nosotros, la mayoría de veces, gracias a los cuentos de nuestras abuelas.	
+    </div>
+		
+	</div>
+	<div data-role="footer">
+		<h4>Manuela Tellez Gomez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-theme="b">
+	<div data-role="header">
+		<h1>Banshee</h1>
+        <div align="center">
+        <a href="#mipanel" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	<div data-role="content">	
+	<div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    Banshee es un ser legendario, nacido del folklore irlandés y escocés (también aparece en el folklore bretón). Sus aullidos, según la leyenda, anunciarían una muerte próxima en la familia de aquel que los oye. Banshee es un término inglés derivado del gaélico "Bean Si" (Irlanda) o "Bean Sith" (Escocia) y significa "mujer del Sidhe". Sidhe designa un cerro o una colina muy afamada de ser la morada de las hadas. Por ello, también se les denomina a estos seres "Bean Sidhe".
+
+Según narra la leyenda, las Banshee puede presentar varias apariencias. Así, las encontramos bajo la forma de una bella muchacha con la cara llena de lágrimas o, al contrario, bajo la forma de una vieja mujer horrorosa de los cabellos largos, vestida con un vestido verde y con un abrigo gris. Puede también aparecerse bajo la forma de una corneja, de una petirroja o de un reyezuelo.
+
+El grito de las Banshee es el más horrible que uno pueda imaginarse. Es a la vez aullido del lobo, gritos de auxilio de un niño abandonado y gritos de un ganso salvaje. Los que lo han oído, afirman que este grito despertaría a cualquiera que durmiera en un sueño profundo y que sería perfectamente audible en medio de una violenta tempestad.
+<div align="center">
+<img src="imagenes/banshee-leyendas.jpg" width="300" height="190">
+    </div>		
+    El aspecto más fuerte de las Banshee, es su don de profecía. Estos seres poseen un espíritu de profecía y de adivinación les permite saber eso que ninguno queremos escuchar, o que tanto tememon. Ellas tienen el don de predecir la muerte y lo anuncian a través de su grito. El que lo escucha sabe que la muerte está cerca, sea para él, sea para algun familiar o amigo cercano. Quizás por esto, las Banshee han adquirido a lo largo de la historia esa mala reputación que las acompaña.
+
+Cuando una Banshee emite este grito, el que lo oye sabe que un miembro de su familia murió o está a punto de morir. La leyenda cuenta que en ocasiones más de una Banshee se ha reunido para aullar al unísono. Este grito unánime servía para anunciar una próxima gran catástrofe o una defunción de una persona muy importante.
+
+También ha habido apariciones de Banshees cerca de un río y se las ve lamentándose lavando la mortaja del futuro fallecido
+    </div>
+	</div>
+	<div data-role="footer">
+		<h4>Manuela Tellez Gomez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-theme="b">
+	<div data-role="header">
+		<h1>Hadas</h1>
+         <div align="center">
+                <a href="#mipanel" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div> 
+        </div>
+           
+  
+	<div data-role="content">	
+		<div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+        Las hadas son pequeños seres luminosos protectoras de la naturaleza. A las hadas se las representa de la siguiente forma: seres femeninos, de apariencia hermosa y cara de ángel. Suelen ser seres pequeños de origen sobrenatural. Incluso poseen poderes mágicos. Tanto es así que muchas de ellas son representadas con una varita mágica. Y a través de ella emiten infinidad de chispas luminosas.
+
+Otro de los rasgos más característicos de las hadas es su capacidad de cambiar de apariencia. La apariencia más habitual con la que se presentan las hadas es humana, Pueden presentarse con apariencia humana, pero también podemos verlas transformadas con aspecto animal o incluso vegetal. 
+
+La apariencia de las hadas ya la hemos explicado a rasgos, pero nos queda explicar su entrañable carácter. Y es que es muy destacable el cariño, el amor y la cercanía de la hadas con la naturaleza. Otra de sus grandes pasiones es la música. No sólo les encanta, sino que tienen una bonita voz y un enorme talento musical.
+<p>
+<div align="center">
+<p><img src="imagenes/hada.jpg" width="234" height="329">
+  </div>
+  La prueba de esto último la encontramos a través de Ulises. Él nos narra en su " Odisea" el miedo que sentía a la sugerente voz de las sirenas. Éstas hechizaban de tal manera a los marineros, que muchos de ellos perdían la consciencia escuchando esa dulce y melosa voz y se lanzaban al agua para estar más cerca y oírla mejor. Otros perdían la noción de todo  y no eran capaces de controlar el barco y chocaban con otros buques.
+
+Al hablar de música pensamos en el canto, pero es sólo eso. Las hadas también adoran bailar. Y se dice que poseen un baile hechizador: reunidas en corro, forman un círculo mágico y saltan y bailan alrededor del mismo, alegre y jubilosamente. Una de las noches en la que es probable que veamos este baile es en la noche de San Juan, su noche favorita.
+</div>	
+	</div>
+	<div data-role="footer">
+		<h4>Manuela Tellez Gomez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4" data-theme="b" >
+	<div data-role="header">
+		<h1>Duendes</h1>
+        <div align="center">
+        <a href="#mipanel" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	<div data-role="content">	
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    <div align="center">
+    <img src="imagenes/DUENDE.jpg" width="200" height="383">
+    </div>
+		Los Duendes son seres diminutos que viven en los bosques, entre las flores. Al igual que les ocurre a las hadas, adoran a la naturaleza. Por eso viven tan cerquita de ella, porque les encanta el contacto con ella y la libertad que ésta les ofrece. Por tanto, los duendes viven en medio del bosque, y sus casas son el interior de algún árbol o, incluso, el subsuelo de la tierra.
+
+Tenemos que aclarar que no debemos confundir a los duendes con los gnomos ya que no son lo mismo. Ambos poseen un tamaño diminuto, es cierto. Pero al contrario que los gnomos, los duendes tienen poderes mágicos. Podemos encontrar duendes de diferentes tipos. Varían en el color. Y no sólo es una variación de apariencia, sino que también lo es de personalidad:
+
+El primer tipo de duende que queremos presentar son los duendes negros, grises y azules. Estos duendes presentan un carácter muy travieso y algo “maligno”. Les encanta hacer maldades por todas partes y a todo el mundo. Como vemos, estos tres colores son colores “oscuros”. Por el contrario tenemos al otro tipo duendes.
+
+Y sí, como has adivinado, se trata de duendes de colores claros. En este grupo encontramos a duendes blancos, amarillos o celestes. Éstos son excelentes compañeros. Son seres juguetones y divertidos. Y aunque también son traviesos, no encontramos maldad en sus actos. Aunque traviesos, son inocentes.
+
+Lo que está más claro es que sean del grupo que sean, no es sencillo ver un duende. Cuenta la historia que los que pueden hacerlo con mayor facilidad son los niños, debido a su puro y noble corazón. Pero no por eso debes desanimarte. Aunque difícil, no es imposible verlos. Los duendes son seres mágicos y les encanta transmitir y enseñar su magia. No sólo los niños tienen un corazón puro y noble. Puede que tú también lo tengas.
+</div>		
+	</div>
+	<div data-role="footer">
+		<h4>Manuela Tellez Gomez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5" data-theme="b" >
+	<div data-role="header">
+		<h1>Brujas</h1>
+        <div align="center">
+        <a href="#mipanel" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	<div data-role="content">	
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+    <div align="center">
+    <img src="imagenes/bruja.jpg" width="400" height="210">
+    </div>
+    Las leyendas, mitos e historias que circulan alrededor de las brujas son diversos y muy variados. Y es que ya no sólo por los poderes que se le atribuían atraen el interés de la gente. Su aspecto sombrío y lúgubre, su inseparable gato negro, su escoba, sus pociones,... todo el entorno de las brujas les da un aire misterioso que desde siempre ha llamado la atención.
+
+BrujasDebemos tener claro que todo lo que hemos comentado anteriormente es una imagen bastante estereotipada de las brujas. Realmente, ¿qué hay de cierto en todo ello? Existen dos tipos de posturas al respecto. La primera de ellas sostiene que las brujas eran seres demoníacos que tenían contacto directo con el diablo. La segunda dice que tan sólo eran mujeres paganas que adoraban a la noche y a la Luna, en vez de al Dios que apoyaba la Inquisición. Y que por ello acabaron como acabaron. Pero vamos a explicar un poco más cada una de esas posturas.
+
+Como ya hemos comentado, la primera de ellas, la conservadora podríamos decir, sostiene que eran seres malignos. Además de sus poderes oscuros, también se les creía envidiosas, egoístas y malas. Además, se les atribuía la capacidad de poder ejercer influencias sobre personas, animales y cosas. Del mismo modo que podían componer hechizos de amor, de odio, encantamientos… Y para postre se comunicaban con el diablo. Como consecuencia de todo ello, la gente de la época les tenía verdadero pavor.
+
+Según esta posición, se podía llegar a ser bruja de dos formas diferentes: por herencia o a través de un pacto con el diablo. Igual que había dos formas de llegar a ser brujas, también habían dos tipos de brujas: las “chupasangre” (se les inculpaba chupar la sangre a los niños y robarlos para realizar hechizos y rituales) y las “espías” (éstas estaban en las calles y vigilaban y controlaban a la gente).
+
+La segunda postura que te hemos presentado contrasta bastante con esta. Esta posición asegura que quizá sólo fueron mujeres que no adoraban a más Dios que la noche o la madre Tierra. Y puede que esas costumbres chocarán con las mentes de la época. Pero que todo su lado maligno es sólo efecto del pánico que sentía la gente hacia ellas.
+
+Lo único realmente claro es que fueran lo que fueran, tuvieron que pagar un precio altísimo por su paganismo. Se montó una compleja maquinaria de busca y captura de las brujas allí donde se hallaran. No importara donde ni como, pero la Inquisición siempre las alcanzaba. Y aunque nunca fue demostrable que fueran satánicas, ante la duda se las quemaba vivas. Nunca tuvieron ninguna oportunidad de demostrar su inocencia. Con una denuncia o incluso habladurías de haberla visto en reuniones nocturnas, sospechosas o incluso realizar prodigios, la persona acusada era detenida y casi siempre asesinada.
+    </div>
+    </div>
+    <div data-role="footer">
+		<h4>Manuela Tellez Gomez</h4>
+	</div>
+</div>
+
+  <div data-role="page" id="page6" data-theme="a">
+	<div data-role="header">
+		<h1>ACERCA DE</h1>
+        <div align="center">
+         <a data-role="button" href="#mipanel" data-inline="true" data-icon="star" data-iconpos="right"> Mostrar Menú </a>
+        </div>	
+	</div>
+	<div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="center">
+    <div align="center">
+    <img src="imagenes/acerca.jpg" height="150" width="250">
+    </div>
+   	<p>SERES MAGICOS</p>
+    <b>
+    <b>
+    <p>CREADO POR:</p>
+    <b>
+    <b>
+    <p>Manuela Tellez Gomez</p>
+    <b>
+    <b>
+    <p>CLACIFICACION</p>
+    <b>
+    <b>
+    <p>Para todas las edades</p>
+    </div>
+		
+	</div>
+	<div data-role="footer">
+		<h4>Manuela Tellez Gomez</h4>
+	</div>
+</div>
+
+    </body>
+
+</html>
